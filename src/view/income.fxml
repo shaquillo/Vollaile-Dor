@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeController">
+   <children>
+      <Label graphicTextGap="10.0" layoutX="57.0" layoutY="30.0" prefHeight="42.0" prefWidth="195.0" text="Cash management" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="26.0">
+               <image>
+                  <Image url="@images/income.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label graphicTextGap="10.0" layoutX="136.0" layoutY="124.0" prefHeight="42.0" prefWidth="209.0" text="Total expenditure :" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="10.0" layoutX="136.0" layoutY="198.0" prefHeight="42.0" prefWidth="195.0" text="Total income :" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="10.0" layoutX="568.0" layoutY="124.0" prefHeight="42.0" prefWidth="287.0" style="-fx-background-color: #FFFFFF;" text="0">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="10.0" layoutX="585.0" layoutY="198.0" prefHeight="42.0" prefWidth="270.0" style="-fx-background-color: #FFFFFF;" text="0">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="10.0" layoutX="136.0" layoutY="267.0" prefHeight="42.0" prefWidth="195.0" text="Balance :" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="10.0" layoutX="585.0" layoutY="267.0" prefHeight="42.0" prefWidth="270.0" style="-fx-background-color: #FFFFFF;" text="0">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="home" layoutX="847.0" layoutY="26.0" onMouseClicked="#goToHome">
+         <image>
+            <Image url="@images/home1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" graphicTextGap="10.0" layoutX="379.0" layoutY="72.0" prefHeight="42.0" prefWidth="195.0" text="This month" textFill="DARKGREEN" underline="true">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" graphicTextGap="10.0" layoutX="388.0" layoutY="330.0" prefHeight="42.0" prefWidth="195.0" text="Today" textFill="DARKGREEN" underline="true">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="10.0" layoutX="136.0" layoutY="392.0" prefHeight="42.0" prefWidth="195.0" text="Total expenditure :" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="10.0" layoutX="136.0" layoutY="456.0" prefHeight="42.0" prefWidth="195.0" text="Total income :" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="10.0" layoutX="143.0" layoutY="530.0" prefHeight="42.0" prefWidth="195.0" text="Balance :" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="10.0" layoutX="585.0" layoutY="392.0" prefHeight="42.0" prefWidth="270.0" style="-fx-background-color: #FFFFFF;" text="0">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="10.0" layoutX="585.0" layoutY="456.0" prefHeight="42.0" prefWidth="270.0" style="-fx-background-color: #FFFFFF;" text="0">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" graphicTextGap="10.0" layoutX="585.0" layoutY="530.0" prefHeight="42.0" prefWidth="270.0" style="-fx-background-color: #FFFFFF;" text="0">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

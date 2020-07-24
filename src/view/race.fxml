@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RaceController">
+    <children>
+        <TableView fx:id="table" layoutX="30.0" layoutY="117.0" prefHeight="399.0" prefWidth="892.0">
+            <columns>
+                <TableColumn fx:id="columnNum" prefWidth="72.0" text="No" />
+                <TableColumn fx:id="columnName" prefWidth="320.0" text="Name" />
+            <TableColumn fx:id="columnDescription" prefWidth="499.0" text="Description" />
+            </columns>
+        </TableView>
+        <Label graphicTextGap="10.0" layoutX="64.0" layoutY="24.0" prefHeight="50.0" prefWidth="139.0" text="Race" textFill="DARKGREEN">
+            <font>
+                <Font name="Yu Mincho Light" size="24.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="44.0">
+               <image>
+                  <Image url="@images/race.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Label>
+        <ImageView fx:id="home" layoutX="826.0" layoutY="24.0" onMouseClicked="#goToHome">
+            <image>
+                <Image url="@images/home1.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="add" layoutX="64.0" layoutY="546.0" onAction="#addRace" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: rgb(0,31,0);" text="Add" textFill="WHITE" />
+        <JFXButton fx:id="back" layoutX="800.0" layoutY="542.0" onAction="#goBack" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: rgb(0,31,0);" text="Return" textFill="WHITE" />
+      <JFXButton fx:id="remove" layoutX="633.0" layoutY="542.0" onAction="#removeRace" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: rgb(0,31,0);" text="Delete" textFill="WHITE" />
+    </children>
+</AnchorPane>

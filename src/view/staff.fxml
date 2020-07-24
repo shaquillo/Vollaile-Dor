@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StaffController">
+    <children>
+        <TableView fx:id="table" layoutX="29.0" layoutY="96.0" prefHeight="420.0" prefWidth="906.0">
+            <columns>
+                <TableColumn fx:id="columnNum" prefWidth="81.0" text="No" />
+                <TableColumn fx:id="columnName" prefWidth="184.0" text="Name" />
+            <TableColumn fx:id="columnSurname" prefWidth="214.0" text="Surname" />
+            <TableColumn fx:id="columnType" prefWidth="117.0" text="Type" />
+            <TableColumn fx:id="columnUser" prefWidth="135.0" text="Username" />
+            <TableColumn fx:id="columnPassword" prefWidth="104.0" text="Password" />
+            <TableColumn fx:id="columnGender" prefWidth="70.0" text="Gender" />
+            </columns>
+        </TableView>
+        <Label graphicTextGap="10.0" layoutX="64.0" layoutY="24.0" prefHeight="50.0" prefWidth="139.0" text="Staff" textFill="DARKGREEN">
+            <font>
+                <Font name="Yu Mincho Light" size="24.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="43.0">
+               <image>
+                  <Image url="@images/staff1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Label>
+        <ImageView fx:id="home" layoutX="817.0" layoutY="24.0" onMouseClicked="#goToHome">
+            <image>
+                <Image url="@images/home1.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="add" layoutX="81.0" layoutY="543.0" onAction="#addStaff" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: rgb(0,31,0);" text="Add" textFill="WHITE" />
+        <JFXButton fx:id="remove" layoutX="802.0" layoutY="543.0" onAction="#removeStaff" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: rgb(0,31,0);" text="Remove" textFill="WHITE" />
+      <JFXButton fx:id="modifyButton" layoutX="203.0" layoutY="543.0" onAction="#modifyEmployee" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: rgb(0,31,0);" text="Modify" textFill="WHITE" />
+    </children>
+</AnchorPane>

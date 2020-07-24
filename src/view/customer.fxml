@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <TableView fx:id="table" layoutX="29.0" layoutY="100.0" prefHeight="408.0" prefWidth="888.0">
+        <columns>
+          <TableColumn fx:id="columnNum" prefWidth="50.0" text="No" />
+          <TableColumn fx:id="columnName" prefWidth="373.0" text="Name" />
+            <TableColumn fx:id="columnAddresse" prefWidth="262.0" text="Adresse" />
+            <TableColumn fx:id="columnTel" prefWidth="202.0" text="Tel" />
+        </columns>
+      </TableView>
+      <Label graphicTextGap="10.0" layoutX="64.0" layoutY="24.0" prefHeight="42.0" prefWidth="192.0" text="Customers" textFill="#7cb7c9">
+         <font>
+            <Font name="Yu Mincho Light" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@images/customer1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <ImageView fx:id="home" layoutX="841.0" layoutY="24.0" onMouseClicked="#goToHome">
+         <image>
+            <Image url="@images/home1.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="add" layoutX="64.0" layoutY="537.0" onAction="#addCustomer" prefHeight="43.0" prefWidth="97.0" style="-fx-background-color: rgb(0,31,0);" text="Add" textFill="WHITE" />
+      <JFXButton fx:id="remove" layoutX="817.0" layoutY="537.0" onAction="#deleteCustomer" prefHeight="43.0" prefWidth="97.0" style="-fx-background-color: rgb(0,31,0);" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>

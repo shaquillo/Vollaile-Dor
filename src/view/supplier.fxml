@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierController">
+    <children>
+        <TableView fx:id="table" layoutX="29.0" layoutY="112.0" prefHeight="385.0" prefWidth="900.0">
+            <columns>
+                <TableColumn fx:id="columnNum" prefWidth="50.0" text="No" />
+                <TableColumn fx:id="columnName" prefWidth="172.0" text="Name" />
+                <TableColumn fx:id="columnAddress" prefWidth="119.0" text="Adresse" />
+                <TableColumn fx:id="columnTel" prefWidth="122.0" text="Tel" />
+                <TableColumn fx:id="columnEmail" prefWidth="146.0" text="email" />
+            <TableColumn fx:id="columnWebsite" prefWidth="146.0" text="website" />
+            <TableColumn fx:id="columnType" prefWidth="144.0" text="Type" />
+            </columns>
+        </TableView>
+        <Label graphicTextGap="10.0" layoutX="64.0" layoutY="24.0" prefHeight="50.0" prefWidth="179.0" text="Suppliers" textFill="DARKGREEN">
+            <font>
+                <Font name="Manjari Regular" size="24.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="45.0">
+               <image>
+                  <Image url="@images/supplier.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Label>
+        <ImageView fx:id="home" layoutX="831.0" layoutY="24.0" onMouseClicked="#goToHome">
+            <image>
+                <Image url="@images/home1.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="add" layoutX="49.0" layoutY="543.0" onAction="#addSupplier" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: rgb(0,31,0);" text="Add" textFill="WHITE" />
+        <JFXButton fx:id="back" layoutX="811.0" layoutY="543.0" onAction="#goBack" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: rgb(0,31,0);" text="Return" textFill="WHITE" />
+      <JFXButton fx:id="remove" layoutX="658.0" layoutY="543.0" onAction="#removeSupplier" prefHeight="36.0" prefWidth="90.0" style="-fx-background-color: rgb(0,31,0);" text="Delete" textFill="WHITE" />
+    </children>
+</AnchorPane>

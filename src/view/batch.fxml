@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BatchController">
+    <children>
+        <TableView fx:id="table" layoutX="19.0" layoutY="106.0" prefHeight="405.0" prefWidth="905.0">
+            <columns>
+                <TableColumn fx:id="columnNum" prefWidth="45.0" text="No" />
+            <TableColumn fx:id="columnName" prefWidth="103.0" text="Name" />
+                <TableColumn fx:id="columnRace" prefWidth="92.0" text="Race" />
+                <TableColumn fx:id="columnQty" prefWidth="73.0" text="Quantity" />
+                <TableColumn fx:id="columnBP" prefWidth="103.0" text="Buying price" />
+            <TableColumn fx:id="columnSP" prefWidth="133.0" text="Selling price" />
+            <TableColumn fx:id="columnSD" prefWidth="118.0" text="Start date" />
+            <TableColumn fx:id="columnBuiling" minWidth="0.0" prefWidth="126.0" text="Building" />
+            <TableColumn fx:id="columnSupplier" prefWidth="111.0" text="Supplier" />
+            </columns>
+        </TableView>
+        <Label graphicTextGap="10.0" layoutX="64.0" layoutY="24.0" prefHeight="42.0" prefWidth="192.0" text="Batch " textFill="#72ab74">
+            <font>
+                <Font name="Yu Mincho Light" size="24.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0">
+               <image>
+                  <Image url="@images/batch2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Label>
+        <ImageView fx:id="home" layoutX="821.0" layoutY="41.0" onMouseClicked="#goToHome">
+            <image>
+                <Image url="@images/home1.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="add" layoutX="50.0" layoutY="532.0" onAction="#addBatch" prefHeight="42.0" prefWidth="99.0" style="-fx-background-color: rgb(0,31,0);" text="Add" textFill="WHITE" />
+      <JFXButton fx:id="remove" layoutX="831.0" layoutY="532.0" onAction="#removeBatch" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: rgb(0,31,0);" text="Delete" textFill="WHITE" />
+    </children>
+</AnchorPane>

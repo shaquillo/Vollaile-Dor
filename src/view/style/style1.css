@@ -1,0 +1,9 @@
+.root {
+   -fx-background-image : url("../images/hen10.jpg");
+   -fx-background-size : 100% ;
+}
+
+.pane1 {
+   -fx-background-color : rgba(255,255,255,0.8) ;
+}
+

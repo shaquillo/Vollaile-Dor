@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="418.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddSicknessController">
+    <children>
+        <Pane prefHeight="498.0" prefWidth="281.0" style="-fx-background-color: rgba(0,100,0,0.3); -fx-background-radius: 5em;">
+            <children>
+                <Label alignment="CENTER" layoutX="69.0" layoutY="79.0" prefHeight="26.0" prefWidth="144.0" text="Add sickness" textFill="DARKGREEN" underline="true">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="25.0" layoutY="112.0" prefHeight="26.0" prefWidth="79.0" text="Name : " textFill="DARKGREEN">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="24.0" layoutY="360.0" prefHeight="56.0" prefWidth="106.0" text="Treatness :&#10; duration " textFill="DARKGREEN">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="add" layoutX="31.0" layoutY="439.0" onAction="#addSickness" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: rgb(0,100,0);" text="Add" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="close" layoutX="179.0" layoutY="439.0" onAction="#closeWindow" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: rgb(0,100,0);" text="Close" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXTextField fx:id="name" focusColor="DARKGREEN" layoutX="110.0" layoutY="113.0" prefHeight="25.0" prefWidth="153.0" />
+                <Label layoutX="12.0" layoutY="171.0" prefHeight="67.0" prefWidth="106.0" text="Description :&#10;       of&#10;    Sickness" textFill="DARKGREEN">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="duration" focusColor="DARKGREEN" layoutX="145.0" layoutY="375.0" prefHeight="26.0" prefWidth="79.0" />
+                <TextArea fx:id="descriptionSickness" layoutX="133.0" layoutY="171.0" prefHeight="81.0" prefWidth="131.0" />
+                <ImageView layoutX="117.0" layoutY="21.0">
+                    <image>
+                        <Image url="@images/race.png" />
+                    </image>
+                </ImageView>
+            <Label layoutX="12.0" layoutY="269.0" prefHeight="73.0" prefWidth="106.0" text="Description : &#10;        of&#10;  treatment" textFill="DARKGREEN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="descriptionTreatment" layoutX="133.0" layoutY="269.0" prefHeight="81.0" prefWidth="131.0" />
+            <ImageView layoutX="115.0" layoutY="21.0">
+               <image>
+                  <Image url="@images/Sickness.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="225.0" layoutY="375.0" prefHeight="26.0" prefWidth="45.0" text="days" textFill="DARKGREEN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

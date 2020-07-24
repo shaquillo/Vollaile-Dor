@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="952.0" stylesheets="@style/style2.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FarmController">
+   <children>
+      <JFXButton fx:id="race" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" layoutX="90.0" layoutY="171.0" onAction="#raceClicked" prefHeight="100.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style/style2.css" text="Race" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@images/race.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label graphicTextGap="10.0" layoutX="90.0" layoutY="54.0" prefHeight="43.0" prefWidth="302.0" text="Farm management" textFill="DARKGREEN">
+         <font>
+            <Font name="Manjari Regular" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="43.0">
+               <image>
+                  <Image url="@images/farm1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton fx:id="sickness" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" layoutX="391.0" layoutY="376.0" onAction="#sicknessClicked" prefHeight="100.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style/style2.css" text="Sicknesses" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@images/Sickness.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="vaccin" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" layoutX="699.0" layoutY="376.0" onAction="#vaccinClicked" prefHeight="100.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style/style2.css" text="Vaccins" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@images/vaccins.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="supplier" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" layoutX="391.0" layoutY="171.0" onAction="#supplierClicked" prefHeight="100.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style/style2.css" text="Supplier" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@images/supplier.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="building" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" layoutX="699.0" layoutY="171.0" onAction="#buildingClicked" prefHeight="100.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style/style2.css" text="Buildings" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@images/buildings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="typeEgg" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" layoutX="90.0" layoutY="376.0" onAction="#typeEggClicked" prefHeight="100.0" prefWidth="154.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style/style2.css" text="Types of eggs" textFill="DARKGREEN">
+         <font>
+            <Font name="Yu Mincho Light" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@images/typeEggs.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fx:id="home" layoutX="834.0" layoutY="51.0" onMouseClicked="#goToHome">
+         <image>
+            <Image url="@images/home1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

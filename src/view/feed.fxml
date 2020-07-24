@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="606.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FeedController">
+    <children>
+        <TableView fx:id="table" layoutX="29.0" layoutY="112.0" prefHeight="388.0" prefWidth="880.0">
+            <columns>
+                <TableColumn fx:id="columnNum" prefWidth="50.0" text="No" />
+                <TableColumn fx:id="columnAliment" prefWidth="235.0" text="Aliment" />
+                <TableColumn fx:id="columnDate" prefWidth="126.0" text="Date" />
+                <TableColumn fx:id="columnBatch" prefWidth="135.0" text="Batch" />
+                <TableColumn fx:id="columnQtyAliment" prefWidth="183.0" text="Quantity of Aliment" />
+            <TableColumn fx:id="columnQtyWater" prefWidth="150.0" text="Quantity of water" />
+            </columns>
+        </TableView>
+        <Label graphicTextGap="10.0" layoutX="64.0" layoutY="24.0" prefHeight="50.0" prefWidth="139.0" text="Feed" textFill="#c79a4d">
+            <font>
+                <Font name="Yu Mincho Light" size="24.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="31.0">
+               <image>
+                  <Image url="@images/feed1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Label>
+        <ImageView fx:id="home" layoutX="819.0" layoutY="24.0" onMouseClicked="#goToHome">
+            <image>
+                <Image url="@images/home1.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="add" layoutX="64.0" layoutY="542.0" onAction="#addFeed" prefHeight="36.0" prefWidth="84.0" style="-fx-background-color: rgb(0,31,0);" text="Add" textFill="WHITE" />
+        <JFXButton fx:id="remove" layoutX="802.0" layoutY="542.0" onAction="#removeFeed" prefHeight="36.0" prefWidth="84.0" style="-fx-background-color: rgb(0,31,0);" text="Delete" textFill="WHITE" />
+    </children>
+</AnchorPane>

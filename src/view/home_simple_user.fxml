@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="673.0" prefWidth="1246.0" style="-fx-background-radius: 0.5em;" stylesheets="@style/style_home.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Homecontroller_simple_user">
+   <left>
+      <VBox prefHeight="576.0" prefWidth="291.0" styleClass="menu" stylesheets="@style/style_home.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="home" alignment="BOTTOM_LEFT" graphicTextGap="10.0" onAction="#homeClicked" onMouseClicked="#buttonClicked" prefHeight="43.0" prefWidth="279.0" styleClass="button1" text="Dashboard" textFill="#ebebeb">
+               <font>
+                  <Font name="Yu Mincho Light" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="sales" alignment="BOTTOM_LEFT" graphicTextGap="10.0" layoutX="30.0" layoutY="30.0" onAction="#salesClicked" onMouseClicked="#buttonClicked" prefHeight="43.0" prefWidth="272.0" styleClass="button1" text="Sales" textFill="#ebebeb">
+               <font>
+                  <Font name="Yu Mincho Light" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@images/sales.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="customers" alignment="BOTTOM_LEFT" graphicTextGap="10.0" layoutX="30.0" layoutY="73.0" onAction="#customersClicked" onMouseClicked="#buttonClicked" prefHeight="43.0" prefWidth="271.0" styleClass="button1" text="Customers" textFill="#ebebeb">
+               <font>
+                  <Font name="Yu Mincho Light" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@images/customer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="batch" alignment="BOTTOM_LEFT" graphicTextGap="10.0" layoutX="30.0" layoutY="116.0" onAction="#batchClicked" onMouseClicked="#buttonClicked" prefHeight="43.0" prefWidth="268.0" styleClass="button1" text="Batch records" textFill="#ebebeb">
+               <font>
+                  <Font name="Yu Mincho Light" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@images/batch.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="egg" alignment="BOTTOM_LEFT" graphicTextGap="10.0" layoutX="30.0" layoutY="159.0" onAction="#eggClicked" onMouseClicked="#buttonClicked" prefHeight="43.0" prefWidth="267.0" styleClass="button1" text="Egg production records" textFill="#ebebeb">
+               <font>
+                  <Font name="Yu Mincho Light" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@images/eggs.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="chick" alignment="BOTTOM_LEFT" graphicTextGap="10.0" layoutX="30.0" layoutY="202.0" onAction="#chicksClicked" onMouseClicked="#buttonClicked" prefHeight="43.0" prefWidth="267.0" styleClass="button1" text="Chick production records" textFill="#ebebeb">
+               <font>
+                  <Font name="Yu Mincho Light" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@images/chick.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="aliment" alignment="BOTTOM_LEFT" graphicTextGap="10.0" layoutX="30.0" layoutY="245.0" onAction="#alimentClicked" onMouseClicked="#buttonClicked" prefHeight="43.0" prefWidth="266.0" styleClass="button1" text="Aliment records" textFill="#ebebeb">
+               <font>
+                  <Font name="Yu Mincho Light" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@images/aliment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="feed" alignment="BOTTOM_LEFT" graphicTextGap="10.0" layoutX="30.0" layoutY="288.0" onAction="#feedClicked" onMouseClicked="#buttonClicked" prefHeight="43.0" prefWidth="264.0" styleClass="button1" text="Feed" textFill="#ebebeb">
+               <font>
+                  <Font name="Yu Mincho Light" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@images/feed.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </left>
+   <top>
+      <AnchorPane prefHeight="72.0" prefWidth="763.0" styleClass="topBar" stylesheets="@style/style_home.css" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView layoutX="997.0" layoutY="13.0">
+               <image>
+                  <Image url="@images/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1058.0" layoutY="23.0" prefHeight="29.0" prefWidth="155.0" text="username" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="1058.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="23.0">
+               <font>
+                  <Font name="Gisha" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="-43.0" endY="36.0" layoutX="333.0" layoutY="37.0" startX="-43.0" startY="-36.0" stroke="#001f00" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="99.0" layoutY="13.0" prefHeight="50.0" prefWidth="109.0" text="MBINKUS &#10;  FARM" textFill="#a6ab20">
+               <font>
+                  <Font name="Harrington" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="82.0" layoutX="14.0" layoutY="9.0">
+               <image>
+                  <Image url="@images/logo.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="576.0" prefWidth="686.0" style="-fx-background-radius: 0.5em;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="28.0" layoutY="32.0" prefHeight="162.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Pane layoutY="54.0" prefHeight="108.0" prefWidth="250.0" style="-fx-background-color: rgb(76,70,173);">
+                     <children>
+                        <Label layoutX="34.0" layoutY="23.0" text="This month : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="66.0" text="Today : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="19.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="62.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="77.0" layoutY="8.0" prefHeight="30.0" prefWidth="96.0" text="Sales" textFill="#4c46ad">
+                     <font>
+                        <Font name="Yu Mincho Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="209.0" layoutY="23.0">
+                     <image>
+                        <Image url="@images/arrow1.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="sales1" alignment="TOP_LEFT" onAction="#salesClicked" prefHeight="162.0" prefWidth="250.0" styleClass="button2" text="1" />
+               </children>
+            </Pane>
+            <Pane layoutX="28.0" layoutY="226.0" prefHeight="162.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Pane layoutY="54.0" prefHeight="108.0" prefWidth="250.0" style="-fx-background-color: rgb(200,212,102);">
+                     <children>
+                        <Label layoutX="34.0" layoutY="23.0" text="This month : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="66.0" text="Today : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="19.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="62.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="77.0" layoutY="7.0" prefHeight="30.0" prefWidth="96.0" text="Eggs" textFill="#c8d466">
+                     <font>
+                        <Font name="Yu Mincho Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="201.0" layoutY="18.0">
+                     <image>
+                        <Image url="@images/arrow4.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="egg1" alignment="TOP_LEFT" onAction="#eggClicked" prefHeight="162.0" prefWidth="250.0" styleClass="button2" text="4" />
+               </children>
+            </Pane>
+            <Pane layoutX="643.0" layoutY="32.0" prefHeight="162.0" prefWidth="286.0" style="-fx-background-color: #FFFFFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Pane layoutY="54.0" prefHeight="108.0" prefWidth="286.0" style="-fx-background-color: rgb(114,171,116);">
+                     <children>
+                        <Label layoutX="34.0" layoutY="23.0" text="This month : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="66.0" text="Today : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="130.0" layoutY="19.0" prefHeight="26.0" prefWidth="144.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="132.0" layoutY="62.0" prefHeight="26.0" prefWidth="142.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="12.0" prefHeight="42.0" prefWidth="221.0" text="Batch records" textFill="#72ab74">
+                     <font>
+                        <Font name="Yu Mincho Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="252.0" layoutY="25.0">
+                     <image>
+                        <Image url="@images/arrow3.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="batch1" alignment="TOP_LEFT" onAction="#batchClicked" prefHeight="162.0" prefWidth="286.0" styleClass="button2" text="3" />
+               </children>
+            </Pane>
+            <Pane layoutX="335.0" layoutY="32.0" prefHeight="162.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Pane layoutY="54.0" prefHeight="108.0" prefWidth="250.0" style="-fx-background-color: rgb(124,183,201);">
+                     <children>
+                        <Label layoutX="34.0" layoutY="23.0" text="This month : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="66.0" text="Today : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="19.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="62.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="40.0" layoutY="4.0" prefHeight="42.0" prefWidth="170.0" text="Customers" textFill="#7cb7c9">
+                     <font>
+                        <Font name="Yu Mincho Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="221.0" layoutY="19.0">
+                     <image>
+                        <Image url="@images/arrow2.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="customer1" alignment="TOP_LEFT" onAction="#customersClicked" prefHeight="162.0" prefWidth="250.0" styleClass="button2" text="2" />
+               </children>
+            </Pane>
+            <Pane layoutX="335.0" layoutY="226.0" prefHeight="162.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Pane layoutY="54.0" prefHeight="108.0" prefWidth="250.0" style="-fx-background-color: rgb(186,116,158);">
+                     <children>
+                        <Label layoutX="34.0" layoutY="23.0" text="This month : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="66.0" text="Today : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="19.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="62.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="63.0" layoutY="12.0" prefHeight="42.0" prefWidth="110.0" text="Chicks" textFill="#ba749e">
+                     <font>
+                        <Font name="Yu Mincho Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="207.0" layoutY="25.0">
+                     <image>
+                        <Image url="@images/arrow5.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="chick1" alignment="TOP_LEFT" onAction="#chicksClicked" prefHeight="162.0" prefWidth="250.0" styleClass="button2" text="5" />
+               </children>
+            </Pane>
+            <Pane layoutX="28.0" layoutY="418.0" prefHeight="162.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Pane layoutY="54.0" prefHeight="108.0" prefWidth="250.0" style="-fx-background-color: rgb(199,154,77);">
+                     <children>
+                        <Label layoutX="34.0" layoutY="23.0" text="This month : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="66.0" text="Today : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="19.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="62.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="77.0" layoutY="14.0" prefHeight="30.0" prefWidth="96.0" text="Feed" textFill="#c79a4d">
+                     <font>
+                        <Font name="Yu Mincho Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="210.0" layoutY="22.0">
+                     <image>
+                        <Image url="@images/arrow7.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="feed1" alignment="TOP_LEFT" onAction="#feedClicked" prefHeight="162.0" prefWidth="250.0" styleClass="button2" text="7" />
+               </children>
+            </Pane>
+            <Pane layoutX="643.0" layoutY="226.0" prefHeight="162.0" prefWidth="283.0" style="-fx-background-color: #FFFFFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Pane layoutY="54.0" prefHeight="108.0" prefWidth="283.0" style="-fx-background-color: rgb(155,91,173);">
+                     <children>
+                        <Label layoutX="34.0" layoutY="23.0" text="This month : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="66.0" text="Today : " textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="139.0" layoutY="19.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="139.0" layoutY="62.0" prefHeight="26.0" prefWidth="131.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label alignment="CENTER" layoutX="79.0" layoutY="11.0" prefHeight="42.0" prefWidth="126.0" text="Aliment" textFill="#9b5bad">
+                     <font>
+                        <Font name="Yu Mincho Light" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView layoutX="237.0" layoutY="22.0">
+                     <image>
+                        <Image url="@images/arrow1.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="aliment1" alignment="TOP_LEFT" onAction="#alimentClicked" prefHeight="162.0" prefWidth="283.0" styleClass="button2" text="6" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
